@@ -1,0 +1,1940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDBDE4B1-05DE-4113-87E6-AA1A109979EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Approach1.Infrastructure.Data</RootNamespace>
+    <AssemblyName>Approach1.Infrastructure.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountIndication.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Action.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Action1.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityLog.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AddressType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AgentOrderStatusDetailMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AnnotationType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiLog.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiLogEntry.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetRole.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUser.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserClaim.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserLogin.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserRole.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Attribute.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AvsrHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AvsrResponseCode.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AvsrSetting.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bank.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankAccountType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankBranch.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankBranchSystemMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankCDV.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillingType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Brand.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BulkDealUpload.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BulkDealUploadCampaign.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BulkDealUploadContent.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BulkDealUploadProduct.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStatusCode.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStatusFileUpload.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStatusFileUploadContent.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bundle.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BundleCampaignMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BundleDealMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CallbackResolution.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Campaign.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignBrand.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignDebitDay.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignIdentificationMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignLead.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignLeadConfiguration.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignLeadDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignLeadExclusion.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignPayMethodMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignSetting.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignTeam.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampaignVerifier.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryAttribute.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryAttributeProductValue.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CCQuery.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CCQuestion.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommSentStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommuncationMethod.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommuncationTemplateField.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommunicationTemplate.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Company.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CourierConfig.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CourierLogin.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentPeriodEmployed.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAccount.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAddress.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAddressArchive.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAnnotation.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAttachment.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAttRoot.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerBank.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCareRecording.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCom.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerContact.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEmployment.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEmploymentAccountability.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFirstOfKin.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMaritalStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerNoSale.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerOptIn.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPaymentFrequency.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C__RefactorLog.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Deal.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DealBundleMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DealCampaign.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DealdepotProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DealNotFound.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DealProductMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DealType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dialer.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DialerLead.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DialerMap.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DistributionLog.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DNC.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Document.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Education.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeIndustry.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmploymentType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExergyCommissionOwner.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Feature.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureCategory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureInRole.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FieldType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FitmentCentre.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FitmentCentreProviderMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FraudulentCredential.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HotSpotterProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificationType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Industry.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Installer.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InstantAVSCheck.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemisedBillingType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lead.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadBatch.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadContact.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadDetailHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadField.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadManagementType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadStatusDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadStatusHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadUploadElement.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadUploadFormat.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeadUploadFormatElement.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LUTStage.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LUTStagestate.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManualInvoice.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManualInvoiceType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturer.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalAid.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTemplate.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTemplateType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetaData.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MigBankingError.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MigratAddressError.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MigrationStatusMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MigrationUserType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Network.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NonSalesCustomer.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NonSalesCustomerContact.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NonSalesCustomerOptIn.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NonSalesCustomerRecording.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperationsProviderSpecificQueue.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperationsRecording.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OptInType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OptInValue.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderActive.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderAnnotation.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBillingStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBillLimit.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBundle.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCancelReason.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCancelReasonDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCancelReasonDetailCampaignMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderConfirmationTemplate.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDelivery.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDeliverySlot.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItemData.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItemError.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItemVettingResult.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderProviderStatusCommsTemplate.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderProviderStatusCommsTemplateHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderRecording.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderRetention.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatusDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatusHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderTelcoAttribute.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderVetting.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Package.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayMethod.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PingdProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PleexDeviceList.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PleexProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortAccountPayMethod.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortAccountType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Portfolio.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortingProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prExpFilTestReportNoParams_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prExpFilTestReportWithParams_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetAttributeIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetBankIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetBCCTs_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetBranchCampCompTeamSalesAgentFromUser_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetBranchIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetBrandIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetByOrderReference_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetCampaignBrandFromUserId_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetCampaignBrand_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetCompanyIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetDNCIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetDNCWithBrandIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetFraudulentCredentialsIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetLeadStatusDetailIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetLeadStatusIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetLeadUploadElement_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetLeadUploadFormat_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetLeadUploads_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetOrderIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetProductCategoryIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetProductIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetQAAgentProductivityWithSalesAgents_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetQAVerifierQualityDetail_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetQAVerifierQuality_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetRole_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetSupplierIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetTariffDetails_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetTariffIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetTeamIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prGetUserTypes_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategoryAttribute.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDimension.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPicture.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Profession.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrometheusBase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrometheusBase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrometheusBase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrometheusBase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrometheusBase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderCommsQueue.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderCommsTemplate.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderCommsTemplateType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderMandatoryField.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderRange.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderRangeDealMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderReserved.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderSalesExclusion.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderSpecificChase.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderSpecificNetstar.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderSpecificOnAir.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderSpecificType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderStatusMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderVoucher.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Province.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prReportCustomerOrdersPameterTest_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prReportCustomerOrders_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prReportOrdersCustomersTest_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveAttributesForCategory_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveAttributesForProduct_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveBankForBranch_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCampaignForDeal_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCampaignIndexSearch_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCampaignIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCampaignsForUser_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCampaignStatsForUser_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCCQueriesForOrder_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCCQueryByOrderAndRecordingFilename_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCCQuestionsChildren_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCitiesInProvince_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCountryForProvince_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCustAddressByCustIDANDType_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCustomerAndOrderAnnotations_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCustomerAnnotationsForCustomer_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCustomerByContact_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCustomerByIdNumber_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCustomerByName_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveCustomerByOrderRef_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveDealIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetCampaignBrands_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetCampaignLead_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetCampaignSalesProgress_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetCampaignTeamAllocations_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetDealCampaigns_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetDealProducts_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetDealsForCampaign_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetLeadStatusDetailForStatusAndCampaign_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetProductsForDeal_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetProductsForManufacturer_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveGetQAQuestionsSummary_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveLeadBatchIndexData_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveLeadByContactNo_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveLeadersInTeam_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveLeadForCampaignLead_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveLeadsByBatch_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveLeadUploadFormatIndexData_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveLead_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveOrderAnnotationsForOrder_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveOrderItemsByProvider_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveOrderItemsForLead_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveOrderItemStatusHistory_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveOrderOrderItems_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveOrderRecordingByOrderAndRecordingFilename_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveOrderToQA_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrievePrintPOOrders_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveProductIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveProvinceForCity_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrievePurchaseOrderIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveQAdOrdersForCampaign_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveQAFormsForOrder_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveQAIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveQAQuestionIndex_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveQAQuestionsForOrder_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveQAQuestions_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveQASectionsForCampaign_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveQASectionsForOrder_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveSearchDeal_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveTeamCampaigns_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveUserFromAuthenticationCredentials_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveVASCategories_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveVASDeals_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prRetrieveVASProducts_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prVASDuplicateCheck_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prWeeklyVettingMonths_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prWeeklyVettingNew_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prWeeklyVetting_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QACampaignConfig.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QACampaignQuestion.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QACategory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QACCQuery.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAForm.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAFormReferral.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAFormStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAFormType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QALevel.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QANonSalesQueue.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAOrder.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAProgress.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAQuestion.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAQuestionsFormTypeMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAQuestionType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAQueue.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QARatioLevelMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAReferralReason.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAReferralType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QARequest.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAResponse.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QARoleLevel.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QASection.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RamApiLog.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RamLogin.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RamLoginDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RelatedOrderItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Relationship.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RELComissionOwnerCompany.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RescueboxProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResidenceType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RetensionsOrderStatusQueue.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RetentionProviderStatusMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoleAction.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoleChangeLogging.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RuleMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SafetyBoxProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaleCheckRule.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaleReferralList.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaleReferralMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaleReferralResolution.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaleRule.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaleRuleDealMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SmsBulkUpload.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SmsBulkUploadFile.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMSInbox.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMSSent.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SmsUploadType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SoMusicProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockInvoice.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItembk.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItemOrderHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockPurchaseOrder.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockPurchaseOrderItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockStatusHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockTake.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockTakeItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suburb.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierAccount.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierBank.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierBrand.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierEmployeeIndustry.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierPostCode.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemReference.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tariff.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TariffType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Team.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TeamLead.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TeamPosition.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TelkomMobileProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TelkomSpecificProvider.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Title.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TitleSystemMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TmpAdminCity.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TmpCity.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TmpProvince.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TmpSuburb.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Token.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TopBillingLookup.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TrackingDriver.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TrackingProviderContact.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TrackingProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransUnionHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfAllOrderChange_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfAllOrders_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfBcctsall_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfbccts_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfBrands_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCampaignManagerBccts_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCampaignManager_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCampaignWithUserTelerik_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCCQaAgent_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfColumnInTable_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfColumnPresentInTable_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCompanyUserTelerik_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfConsignmentReport_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCustomerOptinAll_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCustomerOptInReport_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCustomerOptInYesNoNa_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfCustomerOptin_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDailySales_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDailyStockCountNew_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDailyStockCount_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDatesFuncMonthNew_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDatesFuncToDate_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDatesUDFMonthNew_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDatesUDFToDate_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDealSalesWithTeamLeader_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDealSales_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDealTarrifProvider_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDispatchReportNewVer1_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfDispatchReportNew_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfFinanceReport_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfFormType_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfGetUserTypes_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfHeaderWeekMonth_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLeadContact_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLeadCountPerc_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLeadsAnnotation_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLeadsLastAnnotation_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLeadStatusHistory_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLeadSummaryStatusWithCampaign_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLeadSummaryStatus_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLeadView_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfLowScoreContainer_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfManualInvoiceListing_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfManualInvoicingReport_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfNoOfQAs_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfObfDispatchReport_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfOrderTypes_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfProductCategory_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfProductListing_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfPuchasesReportNew_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfPurchaseOrderListing_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaAgentBccts_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaAgent_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaCampaignQualityDetailWithAgent_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaCampaignQualityWithAgents_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaCampaignQuality_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaSalesAgentQuality_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaTeamLeaderBccts_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaVerifierQualityDetail_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaVerifierQuality_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQaVerifierReferralReasons_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfQuestionsScore_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfReferralReasonsReport_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfReportDailyQa_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfReportNonQaAgent_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfReportQaScoresWithAgent_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfReportQaScores_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfReportReactiveSummary_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfReturnsReport_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfSalesAgentBccts_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfSalesAgent_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfSalesSummaryNew_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfSalesSummaryOld1_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfSplit_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfStockDetailReort_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfStockStatusCount_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfTableSplitString_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfTeamLeaderBccts_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfTeamLeaderUserTelerik_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfTeamLeader_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfTotalCntAllOrders_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfUserTypeWithCampaign_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfUserUserTypeTelerik_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfVerifierQuestions_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfWeeklyVettingSumNew_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="udfWeeklyVettingSum_Result.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdditionalLead.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserCampaignMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserInRole.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserQuality.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VASDuplicateMapping.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VASExclusion.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VASExclusionHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VASXProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleMake.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleModel.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleProviderSpecificDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VettingHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VettingSetting.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VettingType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VivalifeDisabilityLookup.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VivalifeDisabilityProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VivalifeEducationProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VivalifeFamilyFuneralProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VivaLifeGapCoverProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VivaLifeProviderSpecific.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Voucher.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwBCCT.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetBasketItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetCampaignProvIder.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetConsignData.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetConsignmentData.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetCustAddressByIdAndType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetDealsByProvIderAndCampaign.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetDispatchOrdersNew.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetDispatchOrdersNew1.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetFraudCheckOrderItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetManualInvDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetMovementOrder.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetOrderIndexItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetOrderItemDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetProductByManualInvoice.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetProductDimension.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetProductsByOrderId.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetProductsByOrderItemId.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetQAQueueItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetSaleReferralList.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetStockByOrderItemId.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetStockDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetStockItemData.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetStockStatusHistory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetSupplierByIMEI.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetTeamLead.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwGetUserRole.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIMEI.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexBank.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexBankBranch.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexBrand.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexCampaign.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexCategory.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexCCQuery.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexCompany.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexDeal.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexDistribution.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexDNC.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexDNCWithBrandTitle.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexFraudulentCredential.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexLeadBatch.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexLeadStatusWithDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexLeadType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexManufacturer.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexOrder.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexOrderItem.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexOrderStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexProduct.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexQAForm.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexQAQuestion.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexSMSInbox.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexStockPurchaseOrder.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexSupplier.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexTariff.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexTeam.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexUser.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexVoucher.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwIndexVoucherType.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwleadDataALL.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwLeadsDisposition.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwLeadStatusWithDetail.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwLeadUpladFormatWithUserName.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwLeadUploadElementWithFieldTypeName.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwPrintPOOrder.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwQAResponse.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportDailyQa.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportGetTeamLeader.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage60To65.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage65To70.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage70To75.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage75To80.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage80To85.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage85To90.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage90To95.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage95To100.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverageTotal.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportLowScoreAverage_60.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportNonQaAgent.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportQaCampaignQuality.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportQaSalesAgentQuality.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportQaScore.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportReactiveSummary.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportReferralReason.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportSummaryStatu.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportTeamLeader.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwReportTeamLeaderSalesAgent.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwSIM.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwStockSchema.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwSupplierSchema.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwsyncobj0x3030323145443339.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwViewQAFormInfo.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vwViewQAFormQuestion.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WholesaleFileUpload.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WholesaleFileUploadContent.cs">
+      <DependentUpon>PrometheusBase.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="PrometheusBase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PrometheusBase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="PrometheusBase.edmx.diagram">
+      <DependentUpon>PrometheusBase.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PrometheusBase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PrometheusBase.Context.cs</LastGenOutput>
+      <DependentUpon>PrometheusBase.edmx</DependentUpon>
+    </Content>
+    <Content Include="PrometheusBase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PrometheusBase.edmx</DependentUpon>
+      <LastGenOutput>PrometheusBase.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Implementations\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
